@@ -10,8 +10,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16">
           {/* Logo & Corporate Tagline */}
           <div className="md:col-span-1">
-            <Link to="/" className="text-xl font-bold tracking-tight text-black">
-              Local<span className="text-[#0055ff]">SM</span>
+            <Link to="/" className="flex items-center gap-2 text-xl tracking-tight text-black">
+              <img src="/images/localsm-logo.svg" alt="LocalSM" className="h-9 w-9 object-contain" />
+              <span className="localsm-wordmark">
+                Local<span className="text-[#f4b000]">SM</span>
+              </span>
             </Link>
             <p className="mt-4 text-xs tracking-wider text-black/50 uppercase font-medium">
               To endure, evolve, and empower.

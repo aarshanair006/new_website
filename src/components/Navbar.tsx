@@ -46,9 +46,10 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="group flex items-center gap-1.5 focus:outline-none">
-          <span className="text-xl font-bold tracking-tight text-black flex items-center">
-            Local<span className="text-[#0055ff]">SM</span>
+        <Link to="/" className="group flex items-center gap-2 focus:outline-none">
+          <img src="/images/localsm-logo.svg" alt="LocalSM" className="h-9 w-9 object-contain" />
+          <span className="localsm-wordmark text-xl tracking-tight text-black flex items-center">
+            Local<span className="text-[#f4b000]">SM</span>
           </span>
           <span className="h-2 w-2 rounded-full bg-[#0055ff] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
         </Link>

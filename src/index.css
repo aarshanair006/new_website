@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import "tailwindcss";
 
 html, body {
@@ -32,6 +33,10 @@ html, body {
 
 .grayscale-hover-container:hover .grayscale-hover-img {
   filter: grayscale(0%);
+}
+
+.localsm-wordmark {
+  font-family: "Berkshire Swash", cursive;
 }
 
 /* Elegant spacing classes matching Eternal's layout */
