@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoImage from '../assets/image.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ export default function Footer() {
           {/* Logo & Corporate Tagline */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 text-xl tracking-tight text-black">
-              <img src="/images/localsm-logo.svg" alt="LocalSM" className="h-9 w-9 object-contain" />
+              <img src={logoImage} alt="LocalSM" className="h-9 w-9 object-contain" />
               <span className="localsm-wordmark">
                 Local<span className="text-[#f4b000]">SM</span>
               </span>

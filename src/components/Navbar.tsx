@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logoImage from '../assets/image.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +48,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="group flex items-center gap-2 focus:outline-none">
-          <img src="/images/localsm-logo.svg" alt="LocalSM" className="h-9 w-9 object-contain" />
+          <img src={logoImage} alt="LocalSM" className="h-9 w-9 object-contain" />
           <span className="localsm-wordmark text-xl tracking-tight text-black flex items-center">
             Local<span className="text-[#f4b000]">SM</span>
           </span>
